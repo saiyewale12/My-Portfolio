@@ -355,14 +355,23 @@ main {
   margin-bottom: 10px;
 }
 
+.info-content {
+  flex: 1;
+  min-width: 0;
+  max-width: 100%;
+}
+
 .info-content .title {
   color: var(--white-1);
   background: var(--onyx);
   font-size: var(--fs-8);
   font-weight: var(--fw-300);
-  width: max-content;
+  width: 100%;
+  max-width: 230px;
   padding: 3px 12px;
   border-radius: 8px;
+  line-height: 1.4;
+  text-align: center;
 }
 
 .info_more-btn {
@@ -1231,6 +1240,12 @@ textarea.form-input::-webkit-resizer { display: none; }
 .form-btn:disabled:hover { background: var(--border-gradient-onyx); }
 
 .form-btn:disabled:hover::before { background: var(--bg-gradient-jet); }
+
+.resume-download {
+  width: max-content;
+  margin-top: 22px;
+  text-align: center;
+}
 
 .form-status {
   color: var(--light-gray);
